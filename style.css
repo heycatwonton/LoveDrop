@@ -4,17 +4,22 @@
     margin: 0 auto;
     text-align: center;
     justify-content: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: #ffffff;
+    border-radius: 25px;
+
 }
 
 #add-message-module form {
     position: relative;
     padding: 10px;
     width: 400px;
-    background-color: #76b39d;
-    border: 2px solid #bb5490;
+    background-color: #C22A18;
+    border: 2px solid #C22A18;
     display: block;
     text-align: center;
     margin: 0 auto;
+    border-radius: 25px;
 }
 
 #add-message-module form input {
@@ -31,12 +36,13 @@
 
 form {
     text-align: center;
+    display: inline-block;
 }
 
-body {
-    text-align: center;
-    margin: 8px 8px 8px 8px
-}
+/*body {*/
+    /*!*text-align: center;*!*/
+    /*margin: 8px 8px 8px 8px*/
+/*}*/
 
 #content {
     justify-content: center;
@@ -48,12 +54,12 @@ body {
 #add-message-btn {
     display: inline-block;
     border-radius: 4px;
-    background-color: #bb5490;
+    background-color: #C22A18;
     border: none;
-    color: #FFFFFF;
+    color: white;
     text-align: center;
     font-size: 18px;
-    padding: 20px;
+    padding: 0px;
     width: 200px;
     transition: all 0.5s;
     cursor: pointer;
@@ -68,16 +74,20 @@ body {
 }
 
 #add-message-btn span:after {
-    content: '\00bb';
+    content: "";
     position: absolute;
     opacity: 0;
-    top: 0;
-    right: -20px;
-    transition: 0.5s;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    transition: 0.7s;
 }
 
 #add-message-btn:hover span {
     padding-right: 25px;
+    padding-left: 25px;
+
 }
 
 #add-message-btn:hover span:after {
@@ -112,7 +122,7 @@ body {
     padding: 0;
     border: 1px solid #888;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
     -webkit-animation-duration: 0.4s;
     animation-name: animatetop;
@@ -147,7 +157,7 @@ body {
 
 .modal-header {
     padding: 2px 16px;
-    background-color: #bb5490;
+    background-color: #C22A18;
     color: white;
 }
 
@@ -155,6 +165,147 @@ body {
 
 .modal-footer {
     padding: 2px 16px;
-    background-color: #bb5490;
+    background-color: #C22A18;
     color: white;
 }
+
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+    color: #fff;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+    color: #333;
+    text-shadow: none; /* Prevent inheritence from `body` */
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+#lovedropBtn {
+    width:50%;
+    height:50%;
+}
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+    height: 100%;
+    background-color: #fff;
+}
+body {
+    color: #645755;
+    text-align: center;
+    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    font-family: 'Darker Grotesque', sans-serif;
+
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+    display: table;
+    width: 100%;
+    height: 600px;
+    background-color: #ffffff;
+    height: 100%;
+    min-height: 100%;
+    padding: 30px;
+}
+.site-wrapper-inner {
+    display: table-cell;
+    vertical-align: top;
+}
+.cover-container {
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+}
+
+/* Padding for spacing */
+.inner {
+    padding: 30px;
+}
+
+
+/*
+ * Header
+ */
+.navbar-brand {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: 'Bungee Shade', cursive;
+    font-size: 72px;
+    margin-left: 20px;
+
+}
+/*
+ * Cover
+ */
+
+.cover {
+    padding: 0 20px;
+}
+.cover .btn-lg {
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+
+#octocat {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    color: #C22A18;
+}
+
+.nav-link {
+    padding-right: .5rem !important;
+    padding-left: .5rem !important;
+    font-size: 24px;
+}
+
+/* change the background color */
+.navbar-custom {
+    background-color: #C22A18;
+}
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgba(255,255,255,.8);
+}
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255,.5);
+}
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:focus .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+footer {
+    position:fixed;
+    right:0;
+    bottom:0;
+    margin:0;
+    width:50%;
+    height:50%;
+    background:url(https://i.ibb.co/jr5MtTy/robot.png) no-repeat bottom right;
+    background-size:50%;
+}
+
