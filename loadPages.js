@@ -1,19 +1,20 @@
-$(document).ready(function () {
-    $('#about').click(function () {
-        $('#content').load('about.html');
-    });
+var $ = jQuery;
+
+
+$('#about').click(function () {
+    $('#content').load('about.html');
 });
 
 
-$(document).ready(function () {
-    $('#faq').click(function () {
-        $('#content').load('faq.html');
-    });
+$('#contact').click(function () {
+    $('#content').load('contact.html');
 });
 
-$(document).ready(function () {
-    $('#contact').click(function () {
-        $('#content').load('contact.html');
-    });
+
+$('#faq').click(function () {
+    $('#content').load('faq.html');
 });
 
+$('#homepage').click(function () {
+    $('#content').load('homepage.html');
+});

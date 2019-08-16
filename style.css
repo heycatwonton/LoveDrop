@@ -120,7 +120,7 @@ form {
     background-color: #fefefe;
     margin: auto;
     padding: 0;
-    border: 1px solid #888;
+    border: 1px solid white;
     width: 80%;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
     -webkit-animation-name: animatetop;
@@ -205,7 +205,7 @@ body {
     background-color: #fff;
 }
 body {
-    color: #645755;
+    color: white;
     text-align: center;
     text-shadow: 0 1px 3px rgba(0,0,0,.5);
     font-family: 'Darker Grotesque', sans-serif;
@@ -247,6 +247,8 @@ body {
     font-family: 'Bungee Shade', cursive;
     font-size: 72px;
     margin-left: 20px;
+    color: #ffffff;
+
 
 }
 /*
@@ -285,11 +287,11 @@ body {
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
-    color: rgba(255,255,255,.8);
+    color: white;
 }
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
-    color: rgba(255,255,255,.5);
+    color: black;
 }
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
