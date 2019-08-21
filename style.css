@@ -127,7 +127,6 @@ textarea {
     max-width: 70%;
 }
 
-
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 70vw) {
     .modal-content {
@@ -195,7 +194,6 @@ body {
     font-family: 'Darker Grotesque', sans-serif;
 }
 
-
 /* Extra markup and styles for table-esque vertical and horizontal centering */
 .site-wrapper {
     display: table;
@@ -229,7 +227,7 @@ body {
     margin-bottom: 5%;
     font-family: 'Bungee Shade', cursive;
     font-size: 3.5vw;
-    margin-left: 10%;
+    margin-left: 5%;
     color: #ffffff;
 }
 
@@ -241,7 +239,7 @@ body {
 }
 
 .cover .btn-lg {
-    padding: 5% 10%;
+    padding: 5% 5%;
     font-weight: bold;
 }
 
@@ -257,8 +255,8 @@ body {
 
 .nav-link {
     padding-right: .25em !important;
-    padding-left: 2em !important;
-    font-size: 1.5em;
+    padding-left: 1.5em !important;
+    font-size: 1.25vw;
 }
 
 /* change the background color */
@@ -296,7 +294,7 @@ footer {
     background-size: 50%;
 }
 
-#header-about, #header-contact, #version{
+#header-about, #header-contact, #version {
     color: black;
 }
 
