@@ -3,7 +3,7 @@ body {
 }
 
 #add-message-module {
-    width: 80%;
+    width: 805;
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -50,7 +50,7 @@ textarea {
 #content {
     justify-content: center;
     margin: 12.5% auto;
-    width: 50%;
+    width: 50vw;
     padding: 1.5%;
 }
 
@@ -228,9 +228,8 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     font-family: 'Bungee Shade', cursive;
-    font-size: 4vw;
+    font-size: 3.5vw;
     margin-left: 10%;
-    padding-right: 20%;
     color: #ffffff;
 }
 
@@ -257,8 +256,8 @@ body {
 }
 
 .nav-link {
-    padding-right: 1rem !important;
-    padding-left: 2rem !important;
+    padding-right: 1em !important;
+    padding-left: 2em !important;
     font-size: 1.5em;
 }
 
