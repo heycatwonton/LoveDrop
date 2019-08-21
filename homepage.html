@@ -2,21 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes, maximum-scale=1, user-scalable=no">>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    >
     <title>LoveDrop - Home</title>
     <link rel="stylesheet" href="style.css"/>
     <link href="https://fonts.googleapis.com/css?family=Bungee+Shade|Darker+Grotesque&display=swap"
           rel="stylesheet">
 </head>
-<body>
+<body id="homepage">
 
 <section id="add-message-module">
     <form id="form" onsubmit="return false">
         <h2>Send a LoveDrop</h2>
         Name:<br>
-        <textarea rows="2" cols="50" name="name" id="name" class="user-input"></textarea><br>
+        <textarea name="name" id="name" class="user-input"></textarea><br>
         Message:<br>
-        <textarea rows="2" cols="50" name="message" id="message" class="message-input"></textarea><br>
+        <textarea name="message" id="message" class="message-input"></textarea><br>
         <button id="add-message-btn" style="vertical-align: middle">
 <span>
 <img id="lovedropBtn" src="https://i.ibb.co/0hkS2ms/lovedrop-icon.png">
@@ -27,10 +28,10 @@
 
 </section>
 <!-- The Modal -->
-    <div id="myModal" class="modal">>
-        <span class="close"></span>
-        <img class="modal-content" id="modalImage">
-    </div>
+<div id="myModal" class="modal">
+    <span class="close"></span>
+    <img class="modal-content" id="modalImage">
+</div>
 
 <script src="lovedrop.js"></script>
 </body>
