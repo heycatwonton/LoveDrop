@@ -74,6 +74,11 @@ form {
     display: inline-block;
 }
 
+#form-title {
+    font-size: 1.75rem;
+
+}
+
 textarea {
     width: 20vw;
     height: 5vh;
@@ -158,8 +163,6 @@ textarea {
     max-width: 70%;
 }
 
-
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {
@@ -224,6 +227,8 @@ body {
 .site-wrapper {
     display: table;
     width: 100%;
+    text-align: center;
+    vertical-align: middle;
     background-color: #ffffff;
     height: 95%;
     min-height: 50%;
