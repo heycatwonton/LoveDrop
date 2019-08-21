@@ -226,7 +226,7 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     font-family: 'Bungee Shade', cursive;
-    font-size: 3.5vw;
+    font-size: 1.75em;
     margin-left: 5%;
     color: #ffffff;
 }
@@ -256,7 +256,7 @@ body {
 .nav-link {
     padding-right: .25em !important;
     padding-left: 1.5em !important;
-    font-size: 1.25vw;
+    font-size: 1.5em;
 }
 
 /* change the background color */
