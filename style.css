@@ -3,7 +3,7 @@ body {
 }
 
 #add-message-module {
-    width: 805;
+    width: 80%;
     height: auto;
     margin: 0 auto;
     text-align: center;
@@ -256,7 +256,7 @@ body {
 }
 
 .nav-link {
-    padding-right: 1em !important;
+    padding-right: .25em !important;
     padding-left: 2em !important;
     font-size: 1.5em;
 }
