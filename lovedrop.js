@@ -1,19 +1,17 @@
-var database = firebase.database().ref();
+var database = firebase.database().ref("messages");
 var form = document.getElementById("form");
 document.getElementById("add-message-btn").addEventListener("click", addMessageBtnClicked);
 
 
-function pushMessage(name, message, date){
-    var messageRef = database.child("messages");
-    var newMessage = messageRef.push();
-    newMessage.set({
+function pushMessage(name, message, date) {
+    database.set({
         name: name,
         message: message,
         date: date
-    })
+    });
 }
 
-function queueMessages(name, message, date){
+function queueMessages(name, message, date) {
     var queueMessageRef = database.child("queueMessages");
     var queueMessage = queueMessageRef.push();
     queueMessage.set({
@@ -22,7 +20,8 @@ function queueMessages(name, message, date){
         data: date
     })
 }
-function getTimestamp(){
+
+function getTimestamp() {
     // Date class variables
     var monthNames = [
         "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"
@@ -43,23 +42,21 @@ function getTimestamp(){
 }
 
 
-function verifyForm(name, message){
-    if (name.length === 0 || message.length === 0){
+function verifyForm(name, message) {
+    if (name.length === 0 || message.length === 0) {
         return false;
     } else return true;
 }
 
-function displaySuccess() {
-    var modal = document.getElementById("successModal");
-    var span = document.getElementsByClassName("close")[0];
+function displaySuccess(modal, image, modalImg, index) {
+    modal = document.getElementById(modal);
+    modalImg = document.getElementById(modalImg);
+    modalImg.src = image;
     modal.style.display = "block";
-    span.onclick = function() {
-        modal.style.display = "none";
-        window.onclick = function(event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        };
+    modalImg.onclick = function (event) {
+        if (event.target === modalImg) {
+            modal.style.display = "none";
+        }
     };
 }
 
@@ -71,9 +68,9 @@ function addMessageBtnClicked() {
     console.log("name: " + nameDOM + " messsage: " + messageDOM + " time: " + timestamp);
     console.log(verify);
 
-    if (verify === true){
+    if (verify === true) {
         pushMessage(nameDOM, messageDOM, timestamp);
-        displaySuccess();
+        displaySuccess("myModal", "https://i.ibb.co/DWBtLLt/lovedrop-success.png", "modalImage", 0);
         form.reset();
     } else {
         alert("You have missing info :(");
