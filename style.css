@@ -7,7 +7,6 @@
     font-family: 'Darker Grotesque', sans-serif;
     color: #ffffff;
     border-radius: 25px;
-
 }
 
 #add-message-module form {
@@ -26,7 +25,7 @@
     width: 97%;
 }
 
-#add-message-module:hover form{
+#add-message-module:hover form {
     display: block;
 }
 
@@ -38,11 +37,6 @@ form {
     text-align: center;
     display: inline-block;
 }
-
-/*body {*/
-    /*!*text-align: center;*!*/
-    /*margin: 8px 8px 8px 8px*/
-/*}*/
 
 #content {
     justify-content: center;
@@ -87,7 +81,6 @@ form {
 #add-message-btn:hover span {
     padding-right: 25px;
     padding-left: 25px;
-
 }
 
 #add-message-btn:hover span:after {
@@ -100,79 +93,92 @@ form {
 }
 
 /* The Modal (background) */
+
 .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
     z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    padding-top: 200px; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
     height: 100%; /* Full height */
     overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.8); /* Black w/ opacity */
 }
 
-/* Modal Content */
+
 .modal-content {
-    position: relative;
-    background-color: #fefefe;
-    margin: auto;
-    padding: 0;
-    border: 1px solid white;
+    margin: 0 auto;;
+    display: block;
     width: 80%;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-    -webkit-animation-name: animatetop;
-    -webkit-animation-duration: 0.4s;
-    animation-name: animatetop;
-    animation-duration: 0.4s
+    max-width: 500px;
+}
+
+/*!* The Close Button *!*/
+/*.close {*/
+    /*position: absolute;*/
+
+    /*color: #000000;*/
+    /*font-size: 40px;*/
+    /*font-weight: bold;*/
+    /*transition: 0.3s;*/
+/*}*/
+
+/*.close:hover,*/
+/*.close:focus {*/
+    /*color: #bbb;*/
+    /*text-decoration: none;*/
+    /*cursor: pointer;*/
+/*}*/
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 50%;
+    }
 }
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
 @keyframes animatetop {
-    from {top:-300px; opacity:0}
-    to {top:0; opacity:1}
+    from {
+        top: -300px;
+        opacity: 0
+    }
+    to {
+        top: 0;
+        opacity: 1
+    }
 }
 
-/* The Close Button */
-.close {
-    color: white;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.modal-header {
-    padding: 2px 16px;
-    background-color: #C22A18;
-    color: white;
-}
-
-.modal-body {padding: 2px 16px;}
-
-.modal-footer {
-    padding: 2px 16px;
-    background-color: #C22A18;
-    color: white;
-}
-
+/*!* The Close Button *!*/
+/*.close {*/
+/*color: white;*/
+/*float: right;*/
+/*font-size: 28px;*/
+/*font-weight: bold;*/
+/*}*/
+/*.close:hover,*/
+/*.close:focus {*/
+/*color: #000;*/
+/*text-decoration: none;*/
+/*cursor: pointer;*/
+/*}*/
 /*
  * Globals
  */
-
 /* Links */
 a,
 a:focus,
@@ -191,23 +197,23 @@ a:hover {
 }
 
 #lovedropBtn {
-    width:50%;
-    height:50%;
+    width: 50%;
+    height: 50%;
 }
 
 /*
  * Base structure
  */
-
 html,
 body {
     height: 100%;
     background-color: #fff;
 }
+
 body {
     color: white;
     text-align: center;
-    text-shadow: 0 1px 3px rgba(0,0,0,.5);
+    text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: 'Darker Grotesque', sans-serif;
 
 }
@@ -222,10 +228,12 @@ body {
     min-height: 100%;
     padding: 30px;
 }
+
 .site-wrapper-inner {
     display: table-cell;
     vertical-align: top;
 }
+
 .cover-container {
     margin-right: auto;
     margin-left: auto;
@@ -237,7 +245,6 @@ body {
     padding: 30px;
 }
 
-
 /*
  * Header
  */
@@ -248,21 +255,19 @@ body {
     font-size: 72px;
     margin-left: 20px;
     color: #ffffff;
-
-
 }
+
 /*
  * Cover
  */
-
 .cover {
     padding: 0 20px;
 }
+
 .cover .btn-lg {
     padding: 10px 20px;
     font-weight: bold;
 }
-
 
 #octocat {
     width: 50px;
@@ -284,15 +289,18 @@ body {
 .navbar-custom {
     background-color: #C22A18;
 }
+
 /* change the brand and text color */
 .navbar-custom .navbar-brand,
 .navbar-custom .navbar-text {
     color: white;
 }
+
 /* change the link color */
 .navbar-custom .navbar-nav .nav-link {
     color: black;
 }
+
 /* change the color of active or hovered links */
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:focus .nav-link,
@@ -301,13 +309,13 @@ body {
 }
 
 footer {
-    position:fixed;
-    right:0;
-    bottom:0;
-    margin:0;
-    width:50%;
-    height:50%;
-    background:url(https://i.ibb.co/jr5MtTy/robot.png) no-repeat bottom right;
-    background-size:50%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    margin: 0;
+    width: 50%;
+    height: 50%;
+    background: url(https://i.ibb.co/jr5MtTy/robot.png) no-repeat bottom right;
+    background-size: 50%;
 }
 
