@@ -35,8 +35,8 @@ body {
 }
 
 #add-message-module {
-    width: 80%;
-    height: auto;
+    width: 70%;
+    height: 50%;
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -73,7 +73,6 @@ form {
     text-align: center;
     display: inline-block;
     vertical-align: middle;
-
 }
 
 #form-title {
@@ -81,20 +80,23 @@ form {
     margin-bottom: 5%;
 }
 
-
 .user-input {
-    width: 50vw;
+    width: 40vw;
     height: 5vh;
+    font-size: 1.5rem;
 }
+
 .message-input {
-    width: 50vw;
+    width: 40vw;
     height: 10vh;
+    font-size: 1.5rem;
 }
 
 #content {
     justify-content: center;
     margin: 0 auto;
-    width: 100vw;
+    width: 90vw;
+    height: 80vh;
     padding: 1%;
 }
 
@@ -145,20 +147,21 @@ form {
     visibility: hidden;
 }
 
-/* The Modal (background) */
+ /*The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     z-index: 1; /* Sit on top */
-    top: 25% !important;
-    left: 25%;
-    right: 20%;
     text-align: center;
     justify-content: center;
-    width: 50vw; /* Full width */
+    width: 70%; /* Full width */
     height: auto; /* Full height */
+    float: left;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     overflow: auto; /* Enable scroll if needed */
     background-color: rgb(255, 255, 255); /* Fallback color */
-    background-color: rgba(255, 255, 255, .2); /* White w/ opacity */
+    background-color: rgba(255, 255, 255, .8); /* White w/ opacity */
 }
 
 .modal-content {
@@ -166,9 +169,12 @@ form {
     justify-content: center;
     margin: 0 auto;;
     display: block;
-    width: 50vw;
+    width: 70%;
     max-width: 70%;
 }
+
+
+
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
@@ -264,7 +270,7 @@ body {
     margin-top: 1%;
     margin-bottom: 1%;
     font-family: 'Bungee Shade', cursive;
-    font-size: 5vw;
+    font-size: 6vw;
     margin-left: 5%;
     color: #ffffff;
 }
@@ -292,9 +298,9 @@ body {
 }
 
 .nav-link {
-    padding-right: .25em !important;
-    padding-left: 1.5em !important;
-    font-size: 1.5em;
+    padding-right: .25vw !important;
+    padding-left: 3vw !important;
+    font-size: 1.75vw;
 }
 
 /* change the background color */
@@ -326,10 +332,10 @@ footer {
     right: 0;
     bottom: 0;
     margin: 0;
-    width: 50%;
-    height: 50%;
+    width: 20%;
+    height: 20%;
     background: url(https://i.ibb.co/jr5MtTy/robot.png) no-repeat bottom right;
-    background-size: 50%;
+    background-size: 100%;
 }
 
 #header-about, #header-contact, #version {
