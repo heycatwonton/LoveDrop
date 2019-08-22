@@ -32,6 +32,7 @@ body {
     .modal-content {
         width: 100%;
     }
+
     body {
         margin: 0 auto;
         text-align: center;
@@ -52,7 +53,7 @@ body {
 
 #add-message-module form {
     position: relative;
-    padding: 3%;
+    padding: 3% 3% 3% 3%;
     width: 400px;
     background-color: #C22A18;
     border: 5px solid #C22A18;
@@ -148,13 +149,13 @@ form {
     visibility: hidden;
 }
 
- /*The Modal (background) */
+/*The Modal (background) */
 .modal {
     display: none; /* Hidden by default */
     z-index: 1; /* Sit on top */
     text-align: center;
     justify-content: center;
-    width: 70%; /* Full width */
+    width: auto; /* Full width */
     height: auto; /* Full height */
     float: left;
     left: 50%;
@@ -170,10 +171,9 @@ form {
     justify-content: center;
     margin: 0 auto;;
     display: block;
-    width: 70%;
-    max-width: 70%;
+    width: auto;
+    max-width: auto;
 }
-
 
 /* Add Animation */
 @-webkit-keyframes animatetop {
