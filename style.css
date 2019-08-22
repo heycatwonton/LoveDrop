@@ -220,7 +220,7 @@
 
 @media screen and (min-width: 992px) {
     body {
-        padding-top: 5%;
+        padding-top: 10%;
     }
 
     #add-message-module {
