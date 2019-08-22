@@ -23,20 +23,20 @@ body {
 
 @media screen and (min-width: 10px) and (max-width: 767px) {
     body {
-        margin-top: 30%;
+        padding-top: 30%;
     }
 }
 
 /* 100% Image Width on Smaller Screens */
-@media only screen and (max-width: 70px) {
+@media only screen and (max-width: 500px) {
     .modal-content {
         width: 100%;
     }
 }
 
 #add-message-module {
-    width: 70%;
-    height: 50%;
+    width: 450px;
+    /*height: 50%;*/
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -48,7 +48,7 @@ body {
 #add-message-module form {
     position: relative;
     padding: 3%;
-    width: 80%;
+    width: 400px;
     background-color: #C22A18;
     border: 5px solid #C22A18;
     display: block;
@@ -81,14 +81,10 @@ form {
 }
 
 .user-input {
-    width: 40vw;
-    height: 5vh;
     font-size: 1.5rem;
 }
 
 .message-input {
-    width: 40vw;
-    height: 10vh;
     font-size: 1.5rem;
 }
 
@@ -300,7 +296,7 @@ body {
 .nav-link {
     padding-right: .25vw !important;
     padding-left: 3vw !important;
-    font-size: 1.75vw;
+    font-size: 3vw;
 }
 
 /* change the background color */
