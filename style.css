@@ -11,7 +11,7 @@ body {
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     body {
-        margin-top: 20%;
+        padding-top: 20%;
     }
 }
 
@@ -32,11 +32,16 @@ body {
     .modal-content {
         width: 100%;
     }
+    body {
+        margin: 0 auto;
+        text-align: center;
+        justify-content: center;
+        position: relative;
+    }
 }
 
 #add-message-module {
     width: 450px;
-    /*height: 50%;*/
     margin: 0 auto;
     text-align: center;
     justify-content: center;
@@ -93,7 +98,7 @@ form {
     margin: 0 auto;
     width: 90vw;
     height: 80vh;
-    padding: 1%;
+    padding: 0 auto;
 }
 
 #add-message-btn {
@@ -170,8 +175,6 @@ form {
 }
 
 
-
-
 /* Add Animation */
 @-webkit-keyframes animatetop {
     from {
@@ -222,6 +225,7 @@ a:hover {
 html,
 body {
     height: 100%;
+    width: 100%;
     background-color: #fff;
 }
 
