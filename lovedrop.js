@@ -65,14 +65,15 @@ function displaySuccess(modal, image, modalImg, index) {
 function addMessageBtnClicked() {
     let nameDOM = document.getElementById("name").value;
     let messageDOM = document.getElementById("message").value;
+    var successImage = "https://i.ibb.co/DWBtLLt/lovedrop-success.png"
     var timestamp = getTimestamp();
     var verify = verifyForm(nameDOM, messageDOM);
-    console.log("name: " + nameDOM + " messsage: " + messageDOM + " time: " + timestamp);
+    console.log("name: " + nameDOM + " message: " + messageDOM + " time: " + timestamp);
     console.log(verify);
 
     if (verify === true) {
         pushMessage(nameDOM, messageDOM, timestamp);
-        displaySuccess("myModal", "https://i.ibb.co/DWBtLLt/lovedrop-success.png", "modalImage", 0);
+        displaySuccess("myModal", successImage, "modalImage", 0);
         form.reset();
     } else {
         alert("You have missing info :(");
