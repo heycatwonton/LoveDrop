@@ -1,7 +1,3 @@
-body {
-    padding-top: 20%;
-}
-
 /* fix padding under menu after resize */
 @media screen and (max-width: 767px) {
     body {
@@ -235,6 +231,8 @@ body {
     height: 100%;
     width: 100%;
     background-color: #fff;
+    overflow-x: hidden;
+
 }
 
 body {
@@ -242,6 +240,8 @@ body {
     text-align: center;
     text-shadow: 0 1px 3px rgba(0, 0, 0, .5);
     font-family: 'Darker Grotesque', sans-serif;
+    padding-top: 20%;
+    position: relative;
 }
 
 /* Extra markup and styles for table-esque vertical and horizontal centering */
