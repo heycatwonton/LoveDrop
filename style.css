@@ -1,5 +1,17 @@
 /* 100% Image Width on Smaller Screens */
 @media only screen and (max-width: 500px) {
+    #add-message-module {
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    #add-message-module form {
+        position: relative;
+        padding: 3% 3% 3% 3%;
+        width: 80%;
+    }
+
     #modalImage {
         width: 70%;
     }
