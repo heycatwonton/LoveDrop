@@ -4,11 +4,13 @@ document.getElementById("add-message-btn").addEventListener("click", addMessageB
 
 
 function pushMessage(name, message, date) {
-    database.set({
+    var messageId = database.push();
+    messageId.set({
         name: name,
         message: message,
         date: date
     });
+    console.log(messageId.getKey());
 }
 
 function queueMessages(name, message, date) {
